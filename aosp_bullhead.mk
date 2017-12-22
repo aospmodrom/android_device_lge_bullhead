@@ -26,10 +26,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_bullhead
 PRODUCT_DEVICE := bullhead
-PRODUCT_BRAND := Android
-PRODUCT_MODEL := AOSP on BullHead
+PRODUCT_BRAND := google
+PRODUCT_MODEL := Nexus 5X
 PRODUCT_MANUFACTURER := LGE
-PRODUCT_RESTRICT_VENDOR_FILES := true
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_FINGERPRINT="google/bullhead/bullhead:8.1.0/OPM1.171019.011/4448085:user/release-keys" \
+    PRIVATE_BUILD_DESC="bullhead-user 8.1.0 OPM1.171019.011 4448085 release-keys"
 
 PRODUCT_COPY_FILES += device/lge/bullhead/fstab.aosp_bullhead:root/fstab.bullhead
 
