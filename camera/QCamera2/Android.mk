@@ -41,6 +41,7 @@ LOCAL_SRC_FILES += \
 LOCAL_CFLAGS := -Wall -Wextra -Werror
 LOCAL_CFLAGS += -DHAS_MULTIMEDIA_HINTS
 LOCAL_CFLAGS += -DENABLE_MODEL_INFO_EXIF
+LOCAL_CFLAGS += -Wno-bool-compare -Wno-int-in-bool-context -Wno-implicit-fallthrough
 
 ifeq ($(TARGET_USES_AOSP),true)
 LOCAL_CFLAGS += -DVANILLA_HAL
