@@ -31,8 +31,8 @@ PRODUCT_MODEL := Nexus 5X
 PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="google/bullhead/bullhead:8.1.0/OPM3.171019.013/4499252:user/release-keys" \
-    PRIVATE_BUILD_DESC="bullhead-user 8.1.0 OPM3.171019.013 4499252 release-keys"
+    BUILD_FINGERPRINT="google/bullhead/bullhead:8.1.0/OPM5.171019.015/4526959:user/release-keys" \
+    PRIVATE_BUILD_DESC="bullhead-user 8.1.0 OPM5.171019.015 4526959 release-keys"
 
 PRODUCT_COPY_FILES += device/lge/bullhead/fstab.aosp_bullhead:root/fstab.bullhead
 
